@@ -13,7 +13,7 @@ spec:
         app: game-service
     spec:
       containers:
-        - image: phommacm/game_service:v1
+        - image: phommacm/game_service:v1.2
           imagePullPolicy: IfNotPresent
           name: game-service
           ports:
