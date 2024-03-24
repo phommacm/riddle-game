@@ -5,7 +5,6 @@ app = Flask(__name__)
 # Displaying the main page with the riddle
 @app.route('/', methods=['GET'])
 def index():
-    # Static riddle for now, to be removed
     riddle = "Qu'est-ce qui est jaune et qui attend ?"
     return render_template('index.html', riddle=riddle)
 
