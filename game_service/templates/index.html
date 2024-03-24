@@ -14,11 +14,11 @@
         <form action="/submit" method="post">
             <label for="answer">Votre réponse :</label>
             <input type="text" id="answer" name="answer" required>
-            <button type="submit">Soumettre</button>
+            <button type="submit">C'est parti !</button>
         </form>
         
         {% if result %}
-            <p>{{ result }}</p>
+            <p class="result">{{ result }}</p>
         {% endif %}
     </div>
 </body>
