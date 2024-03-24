@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: game-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: game-service
+  template:
+    metadata:
+      labels:
+        app: game-service
+    spec:
+      containers:
+        - image: phommacm/game_service:v1
+          imagePullPolicy: IfNotPresent
+          name: game-service
+          ports:
+            - containerPort: 5000
